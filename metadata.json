@@ -1,0 +1,6 @@
+{
+  "name": "VideoVerse 2.0",
+  "description": "VideoVerse 2.0 — Modern Music Streaming & Discovery Web App with YouTube IFrame player, synced lyrics, playlists, sleep timer, statistics, and Firebase admin.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

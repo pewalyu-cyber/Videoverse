@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" class="theme-dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>VideoVerse 2.0</title>
+    <meta name="description" content="VideoVerse 2.0 — Modern Music Streaming & Discovery Web App with YouTube IFrame player, synced lyrics, playlists, sleep timer, statistics, and Firebase admin." />
+    <meta property="og:title" content="VideoVerse 2.0" />
+    <meta property="og:description" content="VideoVerse 2.0 — Modern Music Streaming & Discovery Web App with YouTube IFrame player, synced lyrics, playlists, sleep timer, statistics, and Firebase admin." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/icons/icon-512.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <!-- PWA & Mobile Web App Meta -->
+    <meta name="theme-color" content="#0a0b0e" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="VideoVerse 2.0" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="/icons/icon-192.svg" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.svg" />
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Official YouTube IFrame Player API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased overflow-hidden select-none">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Service Worker Registration for PWA -->
+    <script>
+      if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((reg) => console.log('[PWA] Service Worker registered with scope:', reg.scope))
+            .catch((err) => console.log('[PWA] Service Worker registration failed:', err));
+        });
+      }
+    </script>
+  </body>
+</html>

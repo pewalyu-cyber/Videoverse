@@ -1,0 +1,47 @@
+{
+  "usr_1791983228277_9063759f": {
+    "uid": "usr_1791983228277_9063759f",
+    "email": "testuser@example.com",
+    "displayName": "Alex Tester",
+    "passwordHash": "8a55dd59d02cf6f97d3507d2cfca90fd97281b227e2bec35ad030437356871a02cdff9f3869bed5d61ed27a83880a19af3bff17a58d1025ee1d5dd9969028118",
+    "salt": "54c60cd79d1d11559407dd335277027e",
+    "role": "listener",
+    "createdAt": 1791983228279,
+    "data": {
+      "likedSongIds": [
+        "song-1",
+        "song-2",
+        "song-3",
+        "song-4"
+      ],
+      "playlists": [
+        {
+          "id": "pl-test",
+          "name": "My Roadtrip Vibes Updated",
+          "songIds": [
+            "song-1",
+            "song-2"
+          ],
+          "coverColor": "#1ed760"
+        },
+        {
+          "id": "pl-new",
+          "name": "Chill Acoustic",
+          "songIds": [
+            "song-3"
+          ]
+        }
+      ],
+      "stats": {
+        "totalPlaybackStarts": 0,
+        "playHistory": [],
+        "songPlayCounts": {},
+        "genrePlayCounts": {},
+        "artistPlayCounts": {}
+      },
+      "playHistory": [],
+      "customSongs": [],
+      "lastSyncedAt": 1791983244456
+    }
+  }
+}

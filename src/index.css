@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #121212;
+    --bg-secondary: #181818;
+    --bg-elevated: #242424;
+    --text-primary: #ffffff;
+    --text-subdued: #b3b3b3;
+    --accent: #1ed760;
+    --accent-hover: #1db954;
+  }
+
+  body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Custom sleek scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 9999px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.35);
+  }
+
+  /* Phone Mockup Frame styling for image fidelity */
+  .phone-mockup-frame {
+    box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.9), 0 0 0 12px #222222, 0 0 0 14px #333333;
+  }
+
+  /* Reduced motion */
+  .reduce-motion * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
